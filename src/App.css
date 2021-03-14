@@ -1,38 +1,79 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  height: 100vh;
   flex-direction: column;
-  align-items: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.inputs {
+  height: 400px;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  background-color: #93fe83;
+}
+
+.inputs input {
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+.inputs button {
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: #13a90b;
   color: white;
+  border-radius: 8px;
+  font-size: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.listOfFriends {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.friendContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.friend {
+  width: 400px;
+  height: 60px;
+  background-color: #13a90b;
+  color: white;
+  display: flex;
+}
+
+.friend h3 {
+  margin-left: 15px;
+}
+.friendContainer button {
+  width: 80px;
+  height: 60px;
+  border: 2px solid black;
+  background-color: #13a90b;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#removeBtn {
+  border-left: none;
 }
